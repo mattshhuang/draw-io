@@ -1,1 +1,54 @@
-<mxfile host="app.diagrams.net" modified="2022-03-02T09:51:44.753Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36" version="16.6.4" etag="bMdIK7JIp6R0JuBnwQ4N" type="github"><diagram id="PaMLHSJBzjiJ5cQbQYLu">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-03-02T10:01:05.714Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36" etag="dnw2mG7oCsmFT8MR_x7L" version="16.6.4" type="github">
+  <diagram id="PaMLHSJBzjiJ5cQbQYLu" name="Page-1">
+    <mxGraphModel dx="2079" dy="699" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BWl7ARk_XlkrGarGOwxK-1" value="1、准备fasta文件，上传至cos" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="260" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BWl7ARk_XlkrGarGOwxK-2" value="2、创建计算任务" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="360" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BWl7ARk_XlkrGarGOwxK-4" value="fasta文件" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/essential-web-1-1/50/files-pages-print-copy-papers-128.png" vertex="1" parent="1">
+          <mxGeometry x="180" y="230" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BWl7ARk_XlkrGarGOwxK-5" value="COS" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="310" y="170" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BWl7ARk_XlkrGarGOwxK-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52.5;entryPerimeter=0;" edge="1" parent="1" source="BWl7ARk_XlkrGarGOwxK-6" target="BWl7ARk_XlkrGarGOwxK-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="130" y="223" />
+              <mxPoint x="250" y="223" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BWl7ARk_XlkrGarGOwxK-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="BWl7ARk_XlkrGarGOwxK-6" target="BWl7ARk_XlkrGarGOwxK-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BWl7ARk_XlkrGarGOwxK-6" value="mutfold前端页面" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="340" width="120" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="BWl7ARk_XlkrGarGOwxK-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BWl7ARk_XlkrGarGOwxK-8" target="BWl7ARk_XlkrGarGOwxK-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BWl7ARk_XlkrGarGOwxK-8" value="用户" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="425" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BWl7ARk_XlkrGarGOwxK-12" value="mutfold后端" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="340" width="120" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="BWl7ARk_XlkrGarGOwxK-13" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#005F4B;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam2.vm_snapshot;" vertex="1" parent="1">
+          <mxGeometry x="10" y="140" width="38" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="BWl7ARk_XlkrGarGOwxK-14" value="CVM" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#005F4B;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam2.server_cluster;" vertex="1" parent="1">
+          <mxGeometry x="500" y="178" width="140" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="BWl7ARk_XlkrGarGOwxK-15" value="" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Docker.svg;" vertex="1" parent="1">
+          <mxGeometry x="650" y="129" width="50" height="41" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
