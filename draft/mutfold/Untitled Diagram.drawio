@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-29T08:46:58.538Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="o98WYL9XI37_-d9SnkK5" version="17.1.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-03-29T08:53:48.551Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="sTfmDnp_n5G6ZYQt-zT5" version="17.1.3" type="github" pages="2">
   <diagram id="PaMLHSJBzjiJ5cQbQYLu" name="Mutfold架构图">
     <mxGraphModel dx="1298" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -336,13 +336,13 @@
         <mxCell id="iN7KQhG2xUNTD77pGo6v-29" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;fontSize=16;endArrow=none;endFill=0;" parent="iN7KQhG2xUNTD77pGo6v-1" source="iN7KQhG2xUNTD77pGo6v-12" target="iN7KQhG2xUNTD77pGo6v-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="iN7KQhG2xUNTD77pGo6v-12" value="用户名" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;" parent="iN7KQhG2xUNTD77pGo6v-1" vertex="1">
+        <mxCell id="iN7KQhG2xUNTD77pGo6v-12" value="密码" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;" parent="iN7KQhG2xUNTD77pGo6v-1" vertex="1">
           <mxGeometry x="190" y="134" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="iN7KQhG2xUNTD77pGo6v-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;fontSize=16;endArrow=none;endFill=0;" parent="iN7KQhG2xUNTD77pGo6v-1" source="iN7KQhG2xUNTD77pGo6v-13" target="iN7KQhG2xUNTD77pGo6v-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="iN7KQhG2xUNTD77pGo6v-13" value="唯一标识（*）" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;" parent="iN7KQhG2xUNTD77pGo6v-1" vertex="1">
+        <mxCell id="iN7KQhG2xUNTD77pGo6v-13" value="用户名" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;" parent="iN7KQhG2xUNTD77pGo6v-1" vertex="1">
           <mxGeometry x="320" y="189" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="iN7KQhG2xUNTD77pGo6v-14" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;说明：&lt;/font&gt;这里省略了每个实体的基本属性，包括id、created_at、updated_at、deleted_at&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="iN7KQhG2xUNTD77pGo6v-1" vertex="1">
@@ -484,9 +484,6 @@
         <mxCell id="iN7KQhG2xUNTD77pGo6v-69" value="调度" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;" parent="iN7KQhG2xUNTD77pGo6v-1" vertex="1">
           <mxGeometry x="640" y="544" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="iN7KQhG2xUNTD77pGo6v-83" value="登录方式、uid" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="iN7KQhG2xUNTD77pGo6v-1" vertex="1">
-          <mxGeometry x="340" y="144" width="213" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="iN7KQhG2xUNTD77pGo6v-89" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#FF0000;endArrow=classic;endFill=1;" parent="iN7KQhG2xUNTD77pGo6v-1" source="iN7KQhG2xUNTD77pGo6v-85" target="iN7KQhG2xUNTD77pGo6v-86" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -511,7 +508,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="iN7KQhG2xUNTD77pGo6v-85" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;user&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;account（uid）&lt;br&gt;username&lt;br&gt;agreement_version&lt;br&gt;phone&lt;br&gt;email&lt;br&gt;free_times&lt;br&gt;created_at&lt;br&gt;updated_at&lt;br&gt;deleted_at&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;fontSize=16;fontColor=#FF0000;" parent="iN7KQhG2xUNTD77pGo6v-1" vertex="1">
+        <mxCell id="iN7KQhG2xUNTD77pGo6v-85" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;user&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;username&lt;br&gt;password&lt;br&gt;agreement_version&lt;br&gt;phone&lt;br&gt;email&lt;br&gt;free_times&lt;br&gt;created_at&lt;br&gt;updated_at&lt;br&gt;deleted_at&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;fontSize=16;fontColor=#FF0000;" parent="iN7KQhG2xUNTD77pGo6v-1" vertex="1">
           <mxGeometry x="-355" y="1151.25" width="200" height="232.5" as="geometry" />
         </mxCell>
         <mxCell id="iN7KQhG2xUNTD77pGo6v-96" value="FK_USER_COS_REFERENCE_TASK" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;fontColor=#FF0000;endArrow=classic;endFill=1;" parent="iN7KQhG2xUNTD77pGo6v-1" source="iN7KQhG2xUNTD77pGo6v-86" target="iN7KQhG2xUNTD77pGo6v-87" edge="1">
