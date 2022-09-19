@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-19T08:22:57.572Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="OIu77HpUGOcIqYXbTQst" version="20.3.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-09-19T08:44:21.783Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="Mlgh6MZ-AXw23eMr-C2f" version="20.3.0" type="github" pages="3">
   <diagram id="7rsemWWNCp-vzNlwPeiq" name="数据库模型图">
-    <mxGraphModel dx="1968" dy="1804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2864" dy="2303" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -29,16 +29,21 @@
         <mxCell id="dmRrRDA9NEYmGUrwIhRF-11" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;project_user&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;project_id&lt;br&gt;user_id&lt;br&gt;vnc_id&lt;br&gt;vnc_name&lt;br&gt;vnc_pwd&lt;br&gt;vnc_port&lt;br&gt;vnc_status(VNC连接情况)&lt;br&gt;linux_name&lt;br&gt;linux_pwd&lt;br&gt;cos_dir&lt;br&gt;geometry(分辨率)&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="205" width="180" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="dmRrRDA9NEYmGUrwIhRF-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dmRrRDA9NEYmGUrwIhRF-12" target="dmRrRDA9NEYmGUrwIhRF-9">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="BgHBSKxdvhH1IlKtlgM_-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dmRrRDA9NEYmGUrwIhRF-12" target="dmRrRDA9NEYmGUrwIhRF-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="170" />
+              <mxPoint x="1040" y="170" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="dmRrRDA9NEYmGUrwIhRF-47" value="FK_TENCENT_ACCOUNT_REFERENCE_USER" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dmRrRDA9NEYmGUrwIhRF-46">
-          <mxGeometry x="-0.1792" y="2" relative="1" as="geometry">
-            <mxPoint y="1" as="offset" />
+        <mxCell id="BgHBSKxdvhH1IlKtlgM_-3" value="FK_TENCENT_ACCOUNT_REFERENCE_PROJECT" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BgHBSKxdvhH1IlKtlgM_-2">
+          <mxGeometry x="-0.527" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="dmRrRDA9NEYmGUrwIhRF-12" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;tencent_account&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;project_id&lt;br&gt;user_id&lt;br&gt;owner_uin(主账号uin)&lt;br&gt;uin(子账户uin)&lt;br&gt;account(子账户名)&lt;br&gt;app_id&lt;br&gt;secret_id&lt;br&gt;secret_key&lt;br&gt;policy_id&lt;br&gt;policy_name&lt;br&gt;status&lt;br&gt;err_msg&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-100" y="-180" width="180" height="240" as="geometry" />
+          <mxGeometry x="600" y="-162" width="180" height="240" as="geometry" />
         </mxCell>
         <mxCell id="dmRrRDA9NEYmGUrwIhRF-13" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;image&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name&lt;br&gt;value&lt;br&gt;status&lt;br&gt;image_type(镜像类型？)&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" vertex="1" parent="1">
           <mxGeometry x="-200" y="785" width="180" height="120" as="geometry" />
@@ -119,10 +124,13 @@
         <mxCell id="dmRrRDA9NEYmGUrwIhRF-49" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;notify_task&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;app_id(应用)&lt;br&gt;channel_id(场景)&lt;br&gt;title&lt;br&gt;content&lt;br&gt;abstract&lt;br&gt;level&lt;br&gt;sender&lt;br&gt;sender_name&lt;br&gt;send_status&lt;br&gt;receiver&lt;br&gt;receiver_name&lt;br&gt;receive_status&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
           <mxGeometry x="100" y="1080" width="180" height="240" as="geometry" />
         </mxCell>
+        <mxCell id="BgHBSKxdvhH1IlKtlgM_-1" value="1.notify相关的表是干什么的？&lt;br&gt;2.tencent_account表是和project绑定的，1对1的关系，后续创建会用SISK？&lt;br&gt;3.用户在project中的状态通过什么体现？&lt;br&gt;4.operation表是记录什么？&lt;br&gt;5.image表中的image有什么用途？&lt;br&gt;6.密钥管理中的密码db有记录吗？" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="15" y="1480" width="430" height="100" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="aF4HjZn4esz__3i61Bms" name="第 2 页">
+  <diagram id="aF4HjZn4esz__3i61Bms" name="泳道图">
     <mxGraphModel dx="2253" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -393,6 +401,29 @@
         </mxCell>
         <mxCell id="BzQM46rRdXbIkxfZsb1q-128" value="修改用户&lt;br&gt;密码" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
           <mxGeometry x="660" y="1520" width="62" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="btMjs_8C5yggfHMF01eK" name="代码">
+    <mxGraphModel dx="2253" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e-3DsLQ5n08EXnR5hzsG-2" value="1.config中ServiceRoleSecretId是干什么的？" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="475" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e-3DsLQ5n08EXnR5hzsG-3" value="apiserver" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="120" y="580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e-3DsLQ5n08EXnR5hzsG-4" value="consumer" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="120" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e-3DsLQ5n08EXnR5hzsG-5" value="edactld" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="120" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e-3DsLQ5n08EXnR5hzsG-6" value="worker" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="120" y="910" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
