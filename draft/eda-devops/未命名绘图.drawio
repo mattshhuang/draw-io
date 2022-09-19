@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-19T08:07:17.863Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="W4K_KLfJ4Gf3rPBWAtzm" version="20.3.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-09-19T08:21:52.405Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="FaVPhJQ0EIjxAU0E2cbs" version="20.3.0" type="github" pages="2">
   <diagram id="7rsemWWNCp-vzNlwPeiq" name="数据库模型图">
     <mxGraphModel dx="1968" dy="1804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -309,7 +309,7 @@
         <mxCell id="BzQM46rRdXbIkxfZsb1q-73" value="登录腾讯云" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
           <mxGeometry x="802" y="987.5" width="62" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="BzQM46rRdXbIkxfZsb1q-74" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1.创建子账号时，访问方式的不同有什么影响？&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="BzQM46rRdXbIkxfZsb1q-74" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1.创建子账号时，访问方式的不同有什么影响？&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2.创建节点xfce是什么？&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-90" y="1320" width="270" height="40" as="geometry" />
         </mxCell>
         <mxCell id="BzQM46rRdXbIkxfZsb1q-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BzQM46rRdXbIkxfZsb1q-75" target="BzQM46rRdXbIkxfZsb1q-79">
@@ -352,11 +352,20 @@
         <mxCell id="BzQM46rRdXbIkxfZsb1q-97" value="是否有&lt;br&gt;SISK" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
           <mxGeometry x="417.5" y="975" width="73" height="55" as="geometry" />
         </mxCell>
+        <mxCell id="BzQM46rRdXbIkxfZsb1q-122" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BzQM46rRdXbIkxfZsb1q-113" target="BzQM46rRdXbIkxfZsb1q-121">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="BzQM46rRdXbIkxfZsb1q-113" value="管理用户" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
           <mxGeometry x="244" y="1300" width="62" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="BzQM46rRdXbIkxfZsb1q-124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BzQM46rRdXbIkxfZsb1q-116" target="BzQM46rRdXbIkxfZsb1q-123">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="BzQM46rRdXbIkxfZsb1q-116" value="创建计算&lt;br&gt;节点" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
           <mxGeometry x="389" y="1360" width="62" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BzQM46rRdXbIkxfZsb1q-126" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BzQM46rRdXbIkxfZsb1q-117" target="BzQM46rRdXbIkxfZsb1q-125">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="BzQM46rRdXbIkxfZsb1q-117" value="释放计算&lt;br&gt;节点" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
           <mxGeometry x="389" y="1440" width="62" height="30" as="geometry" />
@@ -366,6 +375,15 @@
         </mxCell>
         <mxCell id="BzQM46rRdXbIkxfZsb1q-119" value="监控" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
           <mxGeometry x="389" y="1590" width="62" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BzQM46rRdXbIkxfZsb1q-121" value="修改用户&lt;br&gt;权限" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1300" width="62" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BzQM46rRdXbIkxfZsb1q-123" value="创建cvm" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="802" y="1360" width="62" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BzQM46rRdXbIkxfZsb1q-125" value="删除cvm" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="802" y="1440" width="62" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
