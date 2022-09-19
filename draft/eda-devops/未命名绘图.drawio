@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-19T10:20:03.700Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="XSgH-zYip7IIF9bjFTyk" version="20.3.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-09-19T11:01:27.560Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="YT9KVCa8r3JC0VHHVcFI" version="20.3.0" type="github" pages="3">
   <diagram id="7rsemWWNCp-vzNlwPeiq" name="数据库模型图">
     <mxGraphModel dx="2610" dy="2162" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -124,14 +124,14 @@
         <mxCell id="dmRrRDA9NEYmGUrwIhRF-49" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;notify_task&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;app_id(应用)&lt;br&gt;channel_id(场景)&lt;br&gt;title&lt;br&gt;content&lt;br&gt;abstract&lt;br&gt;level&lt;br&gt;sender&lt;br&gt;sender_name&lt;br&gt;send_status&lt;br&gt;receiver&lt;br&gt;receiver_name&lt;br&gt;receive_status&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
           <mxGeometry x="100" y="1080" width="180" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="BgHBSKxdvhH1IlKtlgM_-1" value="1.notify相关的表是干什么的？&lt;br&gt;2.tencent_account表是和project绑定的，1对1的关系，后续创建会用SISK？&lt;br&gt;3.用户在project中的状态通过什么体现？&lt;br&gt;4.operation表是记录什么？&lt;br&gt;5.image表中的image有什么用途？&lt;br&gt;6.密钥管理中的密码db有记录吗？" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="15" y="1480" width="430" height="100" as="geometry" />
+        <mxCell id="BgHBSKxdvhH1IlKtlgM_-1" value="1.notify相关的表是干什么的？系统整体的消息通知用。&lt;br&gt;2.tencent_account表是和project绑定的，1对1的关系，后续创建会用SISK？对。&lt;br&gt;3.用户在project中的状态通过什么体现？没有太好的处理。&lt;br&gt;4.operation表是记录什么？记录敏感操作。&lt;br&gt;5.image表中的image有什么用途？创建VNC连接的linux。&lt;br&gt;6.密钥管理中的密码db有记录吗？没有存，直接修改即可。" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="15" y="1480" width="450" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="aF4HjZn4esz__3i61Bms" name="泳道图">
-    <mxGraphModel dx="2253" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -317,8 +317,8 @@
         <mxCell id="BzQM46rRdXbIkxfZsb1q-73" value="登录腾讯云" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
           <mxGeometry x="802" y="987.5" width="62" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="BzQM46rRdXbIkxfZsb1q-74" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1.创建子账号时，访问方式的不同有什么影响？&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2.创建节点xfce是什么？&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-90" y="1320" width="270" height="40" as="geometry" />
+        <mxCell id="BzQM46rRdXbIkxfZsb1q-74" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1.创建子账号时，访问方式的不同有什么影响？考虑 安全性，不提供腾讯云登录方式。&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2.创建节点xfce是什么？GUI的风格。&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="1780" width="480" height="40" as="geometry" />
         </mxCell>
         <mxCell id="BzQM46rRdXbIkxfZsb1q-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BzQM46rRdXbIkxfZsb1q-75" target="BzQM46rRdXbIkxfZsb1q-79">
           <mxGeometry relative="1" as="geometry" />
@@ -411,7 +411,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="tSqiz03PZhfYDKqzlnPl-26" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="-533" y="900" width="2063" height="280" as="geometry" />
+          <mxGeometry x="-533" y="900" width="1803" height="280" as="geometry" />
         </mxCell>
         <mxCell id="tSqiz03PZhfYDKqzlnPl-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tSqiz03PZhfYDKqzlnPl-7" target="tSqiz03PZhfYDKqzlnPl-22">
           <mxGeometry relative="1" as="geometry" />
@@ -560,6 +560,15 @@
         </mxCell>
         <mxCell id="tSqiz03PZhfYDKqzlnPl-29" value="VPC" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-523" y="1150" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tSqiz03PZhfYDKqzlnPl-30" value="..." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="1020" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_Qafb0wvTKI9EhjA2tlI-1" value="TKEX" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-373" y="520" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_Qafb0wvTKI9EhjA2tlI-2" value="CVM" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-473" y="930" width="50" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
