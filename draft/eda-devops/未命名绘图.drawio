@@ -1,1 +1,125 @@
-<mxfile host="app.diagrams.net" modified="2022-09-19T02:17:30.715Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" version="20.3.0" etag="8f9iC85udXOgMOnZiplo" type="github"><diagram id="7rsemWWNCp-vzNlwPeiq">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-09-19T07:21:32.608Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="idixr5kbiCICMPZAcHXj" version="20.3.0" type="github">
+  <diagram id="7rsemWWNCp-vzNlwPeiq" name="数据库模型图">
+    <mxGraphModel dx="3679" dy="2757" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-9" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;user&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;account(U)&lt;br&gt;way&lt;br&gt;name&lt;br&gt;email&lt;br&gt;phone&lt;br&gt;is_notify&lt;br&gt;agreement_version&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="230" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-10" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;project&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;user_id&lt;br&gt;name&lt;br&gt;nickname(项目新称？)&lt;br&gt;describe&lt;br&gt;invitation_code&lt;br&gt;status&lt;br&gt;security(是否录入安全组)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="230" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dmRrRDA9NEYmGUrwIhRF-11" target="dmRrRDA9NEYmGUrwIhRF-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-21" value="FK_PROJECT_USER_REFERENCE_PROJECT" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dmRrRDA9NEYmGUrwIhRF-20">
+          <mxGeometry x="-0.1681" y="-3" relative="1" as="geometry">
+            <mxPoint x="16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dmRrRDA9NEYmGUrwIhRF-11" target="dmRrRDA9NEYmGUrwIhRF-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-23" value="FK_PROJECT_USER_REFERENCE_USER" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dmRrRDA9NEYmGUrwIhRF-22">
+          <mxGeometry x="0.0146" y="5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-11" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;project_user&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;project_id&lt;br&gt;user_id&lt;br&gt;vnc_id&lt;br&gt;vnc_name&lt;br&gt;vnc_pwd&lt;br&gt;vnc_port&lt;br&gt;vnc_status(VNC连接情况)&lt;br&gt;linux_name&lt;br&gt;linux_pwd&lt;br&gt;cos_dir&lt;br&gt;geometry(分辨率)&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="205" width="180" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dmRrRDA9NEYmGUrwIhRF-12" target="dmRrRDA9NEYmGUrwIhRF-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-47" value="FK_TENCENT_ACCOUNT_REFERENCE_USER" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dmRrRDA9NEYmGUrwIhRF-46">
+          <mxGeometry x="-0.1792" y="2" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-12" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;tencent_account&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;project_id&lt;br&gt;user_id&lt;br&gt;owner_uin(主账号uin)&lt;br&gt;uin(子账户uin)&lt;br&gt;account(子账户名)&lt;br&gt;app_id&lt;br&gt;secret_id&lt;br&gt;secret_key&lt;br&gt;policy_id&lt;br&gt;policy_name&lt;br&gt;status&lt;br&gt;err_msg&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="-180" width="180" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-13" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;image&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name&lt;br&gt;value&lt;br&gt;status&lt;br&gt;image_type(镜像类型？)&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="785" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-19" value="FK_ACCESS_REFERENCE_PROJECT" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dmRrRDA9NEYmGUrwIhRF-15" target="dmRrRDA9NEYmGUrwIhRF-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-15" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;access&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;project_id&lt;br&gt;describe&lt;br&gt;allow_ip(限制IP)&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="-94.5" width="180" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-24" value="FK_EXPERIMENT_REFERENCE_PROJECT" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="dmRrRDA9NEYmGUrwIhRF-16" target="dmRrRDA9NEYmGUrwIhRF-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-16" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;experiment&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;project_id&lt;br&gt;user_id&lt;br&gt;execute_type(0=弹性batch, 1=刚性包年月slurm)&lt;br&gt;name&lt;br&gt;describe&lt;br&gt;type(0=EDA,1=HPC)&lt;br&gt;status&lt;br&gt;submit_dir(CFS相对地址)&lt;br&gt;err_msg&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="580" width="300" height="195" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="dmRrRDA9NEYmGUrwIhRF-17" target="dmRrRDA9NEYmGUrwIhRF-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-32" value="FK_EXPERIMENT_REFERENCE_EXPERIMENT_BATCH" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dmRrRDA9NEYmGUrwIhRF-31">
+          <mxGeometry x="0.1006" y="-4" relative="1" as="geometry">
+            <mxPoint x="-70" y="-22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-17" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;experiment_batch&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;experiment_id&lt;br&gt;bash(执行脚本路径, submitDir下)&lt;br&gt;batch_env_id&lt;br&gt;batch_job_id&lt;br&gt;region&lt;br&gt;zone&lt;br&gt;vpc_id&lt;br&gt;subnet_id&lt;br&gt;image_id&lt;br&gt;cfs_path&lt;br&gt;node_num&lt;br&gt;env_node_metrics&lt;br&gt;cvm_instance_type&lt;br&gt;cvm_instance_image_id&lt;br&gt;cvm_core_type&lt;br&gt;cvm_cpu_core_num&lt;br&gt;cvm_gpu_core_num&lt;br&gt;use_cpu_core_num&lt;br&gt;cvm_charge_type&lt;br&gt;cvm_price&lt;br&gt;start_at&lt;br&gt;done_at&lt;br&gt;compute_time&lt;br&gt;money&lt;br&gt;err_msg&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="990.54" width="210" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="dmRrRDA9NEYmGUrwIhRF-18" target="dmRrRDA9NEYmGUrwIhRF-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-34" value="FK_EXPERIMENT_SLURM_REFERENCE_EXPERIMENT" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dmRrRDA9NEYmGUrwIhRF-33">
+          <mxGeometry x="-0.1523" y="-1" relative="1" as="geometry">
+            <mxPoint x="34" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-18" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;experiment_slurm&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;experiment_id&lt;br&gt;job_id&lt;br&gt;master_instance_id&lt;br&gt;node_num&lt;br&gt;n_tasks_per_node&lt;br&gt;bash(执行脚本？)&lt;br&gt;start_at&lt;br&gt;done_at&lt;br&gt;compute_time&lt;br&gt;err_msg&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="990.54" width="180" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-35" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;operation&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;request_id(请求ID)&lt;br&gt;user_id(操作用户ID)&lt;br&gt;login_ip(操作IP)&lt;br&gt;name(操作名称)&lt;br&gt;content(操作内容)&lt;br&gt;otype(操作类型, 1=EDA)&lt;br&gt;remark&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="760" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dmRrRDA9NEYmGUrwIhRF-36" target="dmRrRDA9NEYmGUrwIhRF-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-43" value="FK_PROJECT_APPLY_REFERENCE_PROJECT" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dmRrRDA9NEYmGUrwIhRF-40">
+          <mxGeometry x="-0.2274" y="-2" relative="1" as="geometry">
+            <mxPoint x="-3" y="39" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-36" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;project_apply&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;apply_user_id&lt;br&gt;approve_user_id&lt;br&gt;project_id&lt;br&gt;status&lt;br&gt;describe&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1530" y="-112" width="180" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dmRrRDA9NEYmGUrwIhRF-38" target="dmRrRDA9NEYmGUrwIhRF-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-44" value="FK_PROJECT_ENV_REFERENCE_PROJECT" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dmRrRDA9NEYmGUrwIhRF-42">
+          <mxGeometry x="-0.1041" relative="1" as="geometry">
+            <mxPoint x="5" y="-30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-38" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;project_env&lt;br&gt;&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;project_id&lt;br style=&quot;&quot;&gt;user_id&lt;br style=&quot;&quot;&gt;account_uin&lt;br style=&quot;&quot;&gt;region&lt;br style=&quot;&quot;&gt;zone&lt;br style=&quot;&quot;&gt;image_type&lt;br style=&quot;&quot;&gt;vpc_id&lt;br style=&quot;&quot;&gt;subnet_id&lt;br style=&quot;&quot;&gt;security_group_id&lt;br style=&quot;&quot;&gt;cos_bucket&lt;br style=&quot;&quot;&gt;cfs_id&lt;br style=&quot;&quot;&gt;cfs_group_id&lt;br style=&quot;&quot;&gt;cfs_link&lt;br style=&quot;&quot;&gt;instance_id&lt;br style=&quot;&quot;&gt;instance_ip&lt;br style=&quot;&quot;&gt;instance_password&lt;br style=&quot;&quot;&gt;status(1=创建中,2=创建失败,3=创建成功)&lt;br style=&quot;&quot;&gt;err_msg&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1530" y="600" width="260" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dmRrRDA9NEYmGUrwIhRF-39" target="dmRrRDA9NEYmGUrwIhRF-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-45" value="FK_PROJECT_CVM_REFERENCE_PROJECT" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dmRrRDA9NEYmGUrwIhRF-41">
+          <mxGeometry x="-0.2731" y="-4" relative="1" as="geometry">
+            <mxPoint x="-28" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-39" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;project_cvm&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;project_id&lt;br&gt;region&lt;br&gt;zone&lt;br&gt;instance_id&lt;br&gt;image_id&lt;br&gt;instance_type&lt;br&gt;instance_charge_type&lt;br&gt;renew_flag&lt;br&gt;period&lt;br&gt;disk_size&lt;br&gt;instance_price&lt;br&gt;money&lt;br&gt;run_time&lt;br&gt;status&lt;br&gt;node_type&lt;br&gt;err_msg&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1530" y="167.5" width="180" height="295" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-48" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;notify_template&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name&lt;br&gt;content&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="1155" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dmRrRDA9NEYmGUrwIhRF-49" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;notify_task&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;app_id(应用)&lt;br&gt;channel_id(场景)&lt;br&gt;title&lt;br&gt;content&lt;br&gt;abstract&lt;br&gt;level&lt;br&gt;sender&lt;br&gt;sender_name&lt;br&gt;send_status&lt;br&gt;receiver&lt;br&gt;receiver_name&lt;br&gt;receive_status&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1080" width="180" height="240" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
