@@ -1,4 +1,4 @@
-<mxfile modified="2023-07-07T03:42:43.951Z" host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="nLIkLUsjRs45ZtWatqqh" version="21.5.0" type="github" pages="10">
+<mxfile modified="2023-07-07T03:48:19.914Z" host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="6PVzPNPDWolDTpUY0HeO" version="21.5.0" type="github" pages="10">
   <diagram id="d1ab7348-05c3-a1e3-ca4d-12c340fd6b49" name="项目一">
     <mxGraphModel dx="1674" dy="828" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
       <root>
@@ -2345,8 +2345,8 @@
         <mxCell id="VUoZkKXdjhKrf3ZmtmNG-9" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;进程：python api.py (Langchain-ChatGLM6B)&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="315" y="640" width="350" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="VUoZkKXdjhKrf3ZmtmNG-11" value="&lt;div style=&quot;font-size: 18px;&quot;&gt;讨论点：&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;1、可用性：和shell一样，需要有项目；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;2、费用：服务器费用TEFS承担，暂时提供单机，后考虑集群；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;3、排队：单台服务器进程去跑，视机器性能来衡量确定服务最大并行数量，MQ排队；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;4、占用时间：聊天页面正常关闭直接取消，挂起则5min后关闭&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="100" y="890" width="710" height="140" as="geometry" />
+        <mxCell id="VUoZkKXdjhKrf3ZmtmNG-11" value="&lt;div style=&quot;font-size: 18px;&quot;&gt;讨论点：&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;1、可用性：和shell一样，需要有项目；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;2、费用：服务器费用TEFS承担，暂时提供单机，后考虑集群；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;3、排队：单台服务器进程去跑，视机器性能来衡量确定服务最大并行数量，MQ排队；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;4、占用时间：聊天页面正常关闭直接取消，挂起则5min后关闭;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;5、持久化：如果上传的所有人不可见，需要关闭服务后删除数据。&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="880" width="710" height="160" as="geometry" />
         </mxCell>
         <mxCell id="VUoZkKXdjhKrf3ZmtmNG-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VUoZkKXdjhKrf3ZmtmNG-13" target="VUoZkKXdjhKrf3ZmtmNG-9">
           <mxGeometry relative="1" as="geometry" />
@@ -2356,6 +2356,9 @@
         </mxCell>
         <mxCell id="VUoZkKXdjhKrf3ZmtmNG-16" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="480" y="610" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VUoZkKXdjhKrf3ZmtmNG-23" value="" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" vertex="1" parent="1">
+          <mxGeometry x="455" y="450" width="25" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
