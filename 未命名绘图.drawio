@@ -1,9 +1,64 @@
-<mxfile host="app.diagrams.net" modified="2023-10-16T07:01:36.160Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" version="21.6.1" etag="FBqkI9OzhJqPQOnnxEVA" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-16T09:09:55.186Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="Z0t1ohueFIADv6etxDA3" version="21.6.1" type="github">
   <diagram name="第 1 页" id="IX3C4ZVMacImRMjZvmrg">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="822" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="7qmhZBxVDfUxYi0ERDrY-5" value="腾讯云" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="130" width="510" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="7qmhZBxVDfUxYi0ERDrY-3" value="业务平台" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="140" width="530" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="7qmhZBxVDfUxYi0ERDrY-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7qmhZBxVDfUxYi0ERDrY-1" target="7qmhZBxVDfUxYi0ERDrY-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7qmhZBxVDfUxYi0ERDrY-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="210" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7qmhZBxVDfUxYi0ERDrY-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7qmhZBxVDfUxYi0ERDrY-2" target="7qmhZBxVDfUxYi0ERDrY-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7qmhZBxVDfUxYi0ERDrY-2" value="注册账号&lt;br&gt;根据uid申请腾讯云帐号" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="210" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7qmhZBxVDfUxYi0ERDrY-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=52.5;entryPerimeter=0;" edge="1" parent="1" source="7qmhZBxVDfUxYi0ERDrY-6" target="7qmhZBxVDfUxYi0ERDrY-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="920" y="598" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7qmhZBxVDfUxYi0ERDrY-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="7qmhZBxVDfUxYi0ERDrY-6" target="7qmhZBxVDfUxYi0ERDrY-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7qmhZBxVDfUxYi0ERDrY-6" value="注册接口" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7qmhZBxVDfUxYi0ERDrY-8" value="依赖aksk" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="725" y="190" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7qmhZBxVDfUxYi0ERDrY-9" value="db" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="400" y="545" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7qmhZBxVDfUxYi0ERDrY-11" value="1、用户在该平台的 uid" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="525" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7qmhZBxVDfUxYi0ERDrY-12" value="云API" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="720" y="220" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7qmhZBxVDfUxYi0ERDrY-13" value="db" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="260" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7qmhZBxVDfUxYi0ERDrY-15" value="1、uid跟腾讯云帐号的绑定关系，根据UserName匹配" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="380" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7qmhZBxVDfUxYi0ERDrY-16" value="鉴权" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="725" y="158" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7qmhZBxVDfUxYi0ERDrY-17" value="费用" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1305" y="388" width="50" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
