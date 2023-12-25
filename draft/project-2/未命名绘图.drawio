@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-25T03:32:10.258Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="K1SPrXPvZH7AaHuoKlfQ" version="22.1.11" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-12-25T03:38:15.547Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="ye8UNfZmnZDdAM84IU6t" version="22.1.11" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="接口相关">
     <mxGraphModel dx="3297" dy="1367" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -564,7 +564,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="HuZscpXBlzZ8LL8zPTlB-42" value="&lt;div&gt;金额 = 单价 * 比特数目 * 运行时间 ＋任务启动和操作时间 * 单价&lt;/div&gt;&lt;div&gt;单价（刊例价） = 0.5 元/比特秒&lt;/div&gt;&lt;div&gt;比特数目 = 用户线路使用的比特数目（按照用户真实输入的数目）&lt;/div&gt;&lt;div&gt;运行时间 = 单shots时长 * shots数目&lt;/div&gt;&lt;div&gt;任务启动操作时间 = 电子学系统等硬件操作时间&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="530" y="-14" width="370" height="103" as="geometry" />
+          <mxGeometry x="770" y="-140" width="370" height="103" as="geometry" />
         </mxCell>
         <mxCell id="HuZscpXBlzZ8LL8zPTlB-47" value="tasks" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="1160" y="-180" width="380" height="210" as="geometry" />
@@ -581,7 +581,7 @@
         <mxCell id="HuZscpXBlzZ8LL8zPTlB-58" value="&lt;font color=&quot;#000000&quot;&gt;任务：shots_time/shots_num/qubit_num/open_qasm/init_time&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#808080;whiteSpace=wrap;" vertex="1" parent="HuZscpXBlzZ8LL8zPTlB-47">
           <mxGeometry y="90" width="380" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="HuZscpXBlzZ8LL8zPTlB-57" value="&lt;font color=&quot;#000000&quot;&gt;计费：svTqccpPublicCloudResourceResourceusag&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#808080;whiteSpace=wrap;" vertex="1" parent="HuZscpXBlzZ8LL8zPTlB-47">
+        <mxCell id="HuZscpXBlzZ8LL8zPTlB-57" value="&lt;font color=&quot;#000000&quot;&gt;计费：unit_price&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#808080;whiteSpace=wrap;" vertex="1" parent="HuZscpXBlzZ8LL8zPTlB-47">
           <mxGeometry y="110" width="380" height="20" as="geometry" />
         </mxCell>
         <mxCell id="HuZscpXBlzZ8LL8zPTlB-59" value="&lt;font color=&quot;#000000&quot;&gt;费用：expected_cost/actual_cost&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#808080;whiteSpace=wrap;" vertex="1" parent="HuZscpXBlzZ8LL8zPTlB-47">
@@ -595,9 +595,6 @@
         </mxCell>
         <mxCell id="HuZscpXBlzZ8LL8zPTlB-54" value="func()..." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1" parent="HuZscpXBlzZ8LL8zPTlB-47">
           <mxGeometry y="178" width="380" height="32" as="geometry" />
-        </mxCell>
-        <mxCell id="HuZscpXBlzZ8LL8zPTlB-55" value="&lt;div&gt;所需参数：&lt;/div&gt;&lt;div&gt;1. 用户使用比特数目&lt;/div&gt;&lt;div&gt;tqweb&lt;/div&gt;&lt;div&gt;2. 单shots时长一&lt;/div&gt;&lt;div&gt;一 硬件侧根据芯片配置的&lt;/div&gt;&lt;div&gt;3. shots数目&lt;/div&gt;&lt;div&gt;tqweb&lt;/div&gt;&lt;div&gt;4. 电子学系统操作时间 ——硬件侧根据实际情况配置&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="690" y="-190" width="300" height="130" as="geometry" />
         </mxCell>
         <mxCell id="HuZscpXBlzZ8LL8zPTlB-56" value="&lt;div&gt;计算公式：cost = sv * (qubit_num * (shots_time * shots_num) + init_time)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1145" y="-230" width="410" height="30" as="geometry" />
